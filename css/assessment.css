@@ -1,0 +1,45 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(7,auto);
+}
+
+title{
+  grid-column: 1/-1;
+  align-content:center;
+  text-transform: uppercase;
+  font-family: "times new roman", sans-serif;
+}
+
+img{
+   width: 120px; 
+   margin-bottom: 15px; 
+   align-content: center;
+}
+
+body {
+ background-image: url("../images/back-ground.jpeg");
+ background-repeat: repeat;
+ background-color: #cccccc;
+ }
+
+div{
+   padding: 30px; 
+   margin:5px; 
+   grid-column:1/span 2;
+   grid-row: 3/span 5;
+}
+
+@media screen and (min-width: 850px){
+
+main{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(5,auto); 
+}
+
+div{
+  grid-column:1/span 3;
+  grid-row: 3/span 3;
+}
+
